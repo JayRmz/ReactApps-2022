@@ -12,13 +12,15 @@ export default function ExpenseItem(props) {
   };
 
   return (
-    <Card className="expense-item">
-      <ExpenseDate date={date} />
-      <div className="expense-item__description">
-        <h2>{itemTitle}</h2>
-        <div className="expense-item__price">${amount}</div>
-      </div>
-      {/* <button onClick={clickedHandler}> Change Title </button> */}
-    </Card>
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date={date} />
+        <div className="expense-item__description">
+          <h2>{itemTitle}</h2>
+          <div className="expense-item__price">${amount}</div>
+        </div>
+        {/* <button onClick={clickedHandler}> Change Title </button> */}
+      </Card>
+    </li>
   );
 }

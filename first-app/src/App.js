@@ -14,11 +14,7 @@ function App() {
   return (
     <div>
       <NewExpense onSubmit={addNewExpense} />
-      {expenses.length === 0 ? (
-        <p>No Expenses added</p>
-      ) : (
-        <Expenses items={expenses} />
-      )}
+      <Expenses items={expenses} />
     </div>
   );
 }
